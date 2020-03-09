@@ -43,7 +43,7 @@ It's a basic CRUD API. It requires a JWT token header which can be obtained on t
 	    "slug": "Example Slug",
             "city": "Example City",
             "state": "Example State",
-            "created_at": "Thu, 19 Dec 2019 10:35:57 GMT", //as timestamp, should be formatted as "mm/dd/yyyy hh:ii:ss"?,
+            "created_at": "Thu, 19 Dec 2019 10:35:57 GMT", //as timestamp,
             "updated_at": "" // same as created_at
         },
         {
@@ -79,7 +79,7 @@ It's a basic CRUD API. It requires a JWT token header which can be obtained on t
 	"slug": "Example Slug",
         "city": "Example City",
         "state": "Example State",
-        "created_at": "Thu, 19 Dec 2019 10:35:57 GMT", //as timestamp, should be formatted as "mm/dd/yyyy hh:ii:ss"?,
+        "created_at": "Thu, 19 Dec 2019 10:35:57 GMT", //as timestamp,
         "updated_at": "" // same as created_at
     }
 }
@@ -117,7 +117,7 @@ It's a basic CRUD API. It requires a JWT token header which can be obtained on t
 	"slug": "Example Slug",
         "city": "Example City",
         "state": "Example State",
-        "created_at": "Thu, 19 Dec 2019 10:35:57 GMT", //as timestamp, should be formatted as "mm/dd/yyyy hh:ii:ss"?,
+        "created_at": "Thu, 19 Dec 2019 10:35:57 GMT", //as timestamp,
         "updated_at": "time of change" // same as created_at
     }
 }
@@ -140,7 +140,7 @@ It's a basic CRUD API. It requires a JWT token header which can be obtained on t
 	    "slug": "Example Slug",
             "city": "Example City",
             "state": "Example State",
-            "created_at": "Thu, 19 Dec 2019 10:35:57 GMT", //as timestamp, should be formatted as "mm/dd/yyyy hh:ii:ss"?,
+            "created_at": "Thu, 19 Dec 2019 10:35:57 GMT", //as timestamp,
             "updated_at": "" // same as created_at
         }
     ]
@@ -165,7 +165,7 @@ It's a basic CRUD API. It requires a JWT token header which can be obtained on t
 	    "slug": "Example Slug",
             "city": "Example City",
             "state": "Example State",
-            "created_at": "Thu, 19 Dec 2019 10:35:57 GMT", //as timestamp, should be formatted as "mm/dd/yyyy hh:ii:ss"?,
+            "created_at": "Thu, 19 Dec 2019 10:35:57 GMT", //as timestamp,
             "updated_at": "" // same as created_at
         },
         {
