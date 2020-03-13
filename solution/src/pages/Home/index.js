@@ -18,6 +18,7 @@ export default function Home() {
           password: 'test',
         })
         .then(setIsLoading(false));
+      sessionStorage.removeItem('Authorization');
       sessionStorage.setItem('Authorization', data.access_token);
     }
     getToken();
