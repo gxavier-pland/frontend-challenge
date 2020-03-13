@@ -16,4 +16,8 @@ export default createGlobalStyle`
     font-family: 'Nunito', sans-serif;
     height: 100%;
   }
+
+  button {
+    cursor: pointer;
+  }
 `;

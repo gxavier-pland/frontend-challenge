@@ -12,13 +12,8 @@ export default function Dashboard() {
   useEffect(() => {
     async function getToken() {
       setIsLoading(true);
-      const token = sessionStorage.getItem('Authorization');
       const { data } = await api
-        .get('/api/v1.0/places', {
-          headers: {
-            Authorization: `JWT ${token}`,
-          },
-        })
+        .get('/api/v1.0/places')
         .then(setIsLoading(false));
       setPlaces(data.places);
     }
@@ -27,17 +22,20 @@ export default function Dashboard() {
 
   return (
     <Container>
-      {isLoading && <LoadingSpinner />}
-      <div className="wrapper">
-        {places.length > 0 &&
-          places.map(place => (
-            <Link to="/details/:place" className="card" key={place.id}>
-              <p>{place.name}</p>
-              <p>{place.city}</p>
-              <p>{place.state}</p>
-            </Link>
-          ))}
-      </div>
+      {isLoading ? (
+        <LoadingSpinner />
+      ) : (
+        <div className="wrapper">
+          {places.length > 0 &&
+            places.map(place => (
+              <Link to="/details/:place" className="card" key={place.id}>
+                <p>{place.name}</p>
+                <p>{place.city}</p>
+                <p>{place.state}</p>
+              </Link>
+            ))}
+        </div>
+      )}
     </Container>
   );
 }
