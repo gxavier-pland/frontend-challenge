@@ -18,9 +18,7 @@ export default function Register() {
         city,
         state,
       })
-      .then(setIsLoading(false))
-      .then(setUserMessage('Lugar Cadastrado'))
-      .catch(setUserMessage('Ops, ocorreu um erro'));
+      .then(setIsLoading(false), setUserMessage('Lugar Cadastrado'));
   }
 
   return (
