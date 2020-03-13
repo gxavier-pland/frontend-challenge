@@ -7,6 +7,24 @@ export default styled.div`
   justify-content: center;
   align-items: center;
 
+  form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    input {
+      height: 40px;
+      border: 0;
+      border-bottom: 1px solid #212845;
+      margin-right: 5px;
+      padding: 5px;
+    }
+    button {
+      border: 0;
+      background-color: transparent;
+    }
+  }
+
   .wrapper {
     width: 100%;
     height: 100%;
